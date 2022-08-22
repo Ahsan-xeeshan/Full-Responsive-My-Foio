@@ -1,0 +1,290 @@
+@media (min-width:280px) and (max-width:575px) {
+    nav{
+        position: absolute !important;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: block;
+        z-index: 99;
+    }
+
+    nav #myNavBar ul li a {
+        padding: 15px 15px;
+    }
+    nav #myNavBar ul{
+        text-align: center;
+    }
+
+
+    .heading{
+        font-size: 20px;
+        margin-top: 50px;
+    }
+    .heading::after {
+        bottom: -15px;
+    }
+
+    #banner{
+        height: 222px;
+        margin-top: 56px;
+    }
+    #banner .row{
+        height: 202px;
+    }
+
+    #banner .banner-text {
+        width: 100%;
+        margin-top: 20px;
+    
+    }
+
+    #banner .banner-text h2 {
+        font-size: 10px;
+    }
+    
+    #banner .banner-text h1 {
+        font-size: 14px;
+        letter-spacing: 10px;
+    }
+    
+    #banner .banner-text p {
+        font-size: 8px;
+    }
+    
+    #banner .banner-text img {
+        margin: 15px auto;
+        width: 50px;
+    }
+    .button{
+        width: 60px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 8px;
+        color: #0b1016;
+        margin: 0 auto;
+    }
+    #about {
+        padding: 0;
+    }
+    #about p {
+        font-size: 14px;
+        margin: 50px auto;
+    }
+    #about p span {
+        font-size: 18px;
+    }
+        
+    #about .about_card{
+        margin: 15px 15px;
+        border-right: none;
+        border-bottom: 1px solid #d9dbdb;
+    }
+    #service{
+        text-align: center;
+        background-image: none;
+        background-color: #faebd747;
+        height: fit-content;
+    }
+    #service h2 {
+        font-size: 20px;
+    }
+
+    #service h2::after{
+        bottom: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 162px;
+        height: 9px;
+    }
+    
+    #service .para{
+        width: 100%;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #service .service_details .service_card {
+        text-align: center;
+        border-bottom: 1px solid #d9dbdb;
+    }
+    #service .service_details .service_card:last-child{
+        border: none;
+    }
+
+    #service .service_details .service_card p {
+        width: 100%;
+    }
+
+    #work p{
+        width: 80%;
+    }
+
+    form {
+        background-color: rgb(11, 11, 11);
+        padding: 5px 0px;
+    }
+    footer p {
+        width: 80%;
+        font-size: 14px;
+        margin: 50px auto;
+    }
+    footer .form_input{
+        width: 80%;
+    }
+    .form-control{
+        font-size: 14px;
+    }
+    footer .form_text p {
+        font-size: 14px;
+    }
+    footer .form_text textarea{
+        width: 80%;
+        margin-left: 36px;
+    }
+
+    footer .button{
+        margin: 20px auto;
+    }
+    footer .copyright{
+        width: 100%;
+        padding: 0px;
+    }
+    footer .copyright p{
+        font-size: 10px;
+        padding: 15px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991px){
+    nav{
+        position: absolute !important;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: block;
+        z-index: 99;
+    }
+
+    #banner{
+        height: 328px;
+        margin-top: 56px;
+    }
+    #banner .row{
+        height: 328px;
+    }
+    #banner .banner-text{
+        margin-top: 75px;
+    }
+    #banner .banner-text h2 {
+        font-size: 16px;
+    }
+    
+    #banner .banner-text h1 {
+        font-size: 26px;
+        letter-spacing: 14px;
+    }
+    
+    #banner .banner-text p {
+        font-size: 12px;
+    }
+    
+    #banner .banner-text img {
+        margin: 15px auto 0;
+    }
+    .button{
+        width: 80px;
+        height: 25px;
+        line-height: 25px;
+        font-size: 8px;
+        margin: 25px auto;
+        color: #0b1016;
+    }
+    #about .about_card{
+        margin-bottom: 40px;
+    }
+    #about .about_card:nth-child(2){
+        border: none;
+    }
+    
+    #service{
+        background-image: none;
+        background-color: #faebd747;
+        height: fit-content;
+    }
+    #service{
+        text-align: center;
+        background-image: none;
+        background-color: #faebd747;
+        height: fit-content;
+    }
+
+    #service h2::after{
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 162px;
+        height: 9px;
+    }
+
+    #service .para{
+        width: 100%;
+        text-align: center;
+    }
+    #service .service_details .service_card {
+        text-align: center;
+        border-right: 1px solid #d9dbdb;
+        margin-bottom: 40px;
+    }
+    #service .service_details .service_card:nth-child(2), #service .service_details .service_card:nth-child(4){
+        border: none;
+    }
+
+    #service .service_details .service_card p {
+        width: 100%;
+    }
+    footer p {
+        width: 100%;
+    }
+    footer .form_input{
+        width: 80%;
+    }
+
+    footer .form_text textarea{
+        width: 80%;
+        margin-left: 55px;
+    }
+    footer .copyright{
+        width: 100%;
+        padding: 0px;
+    }
+    footer .copyright p{
+        font-size: 12px;
+        padding: 25px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+    #banner{
+        height: 580px;
+    }
+    #banner .row{
+        height: 564px;
+    }
+    #banner .banner-text {
+        width: 100%;
+        margin-top: 90px;
+    }
+    #banner .banner-text h1 {
+        font-size: 50px;
+    }
+
+    #service .service_details .service_card{
+        padding: 25px 0;  
+    }
+    footer .form_text textarea{
+        width: 750px;
+        margin-left: 140px;
+    }
+}
+
+

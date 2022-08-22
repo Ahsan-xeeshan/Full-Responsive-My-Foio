@@ -1,0 +1,419 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+span,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color: #02918c;
+    --button-color: #cfc91d;
+    --banner-height: 730px;
+}
+.heading {
+    margin-top: 100px;
+    font-weight: 800; 
+    font-size: 46px;
+    color: var(--main-color);
+    text-transform: uppercase;
+    text-align: center ;
+    position: relative;
+}
+.heading::after{
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 162px;
+    height: 9px;
+    background-image: url(../image/underline.png);
+}
+
+.button {
+    display: block;
+    width: 197px;
+    height: 47px;
+    background-color: var(--button-color);
+    margin: 50px auto;
+    line-height: 47px;
+    color: #0b1016;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.button:hover{
+    background-color: white;
+}
+
+
+/* nav style here */
+
+nav {
+    background-color: var(--main-color);
+}
+
+nav #myNavBar ul li a {
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 18px 25px;
+}
+
+nav button.myTogglerBtn {
+    color: white;
+}
+
+nav button.myTogglerBtn:focus {
+    box-shadow: none;
+}
+
+/* banner style here */
+
+#banner {
+    background-image: url(../image/banner.jpg);
+    height: var(--banner-height);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+#banner::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
+#banner .row {
+    height: var(--banner-height);
+}
+
+#banner .banner-text {
+    width: 100%;
+    margin-top: 40px;
+}
+
+#banner .banner-text h2 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+#banner .banner-text h1 {
+    font-size: 68px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+    margin-bottom: 15px;
+}
+
+#banner .banner-text p {
+    font-size: 18px;
+}
+
+#banner .banner-text img {
+    margin: 50px auto 0;
+}
+
+/* banner ends here */
+
+/* about starts here  */
+
+#about{
+    padding: 97px 0;
+}
+
+#about p{
+    max-width: 940px;
+    text-align: center;
+    margin: 78px auto;
+    color: #7e8287;
+    padding: 0 15px;
+}
+
+#about p span{
+    font-size: 23px;
+    font-weight: 800;
+}
+
+#about .about_card{
+   
+    text-align: center;
+    border-right: 1px solid #d9dbdb;
+    padding: 40px 0;
+}
+
+#about .about_card:last-child{
+    border: none;
+}
+
+#about .about_card span{
+    color: var(--main-color);
+    font-size: 30px;
+}
+
+#about .about_card h3 {
+    font-size: 16px;
+    font-weight: 800;
+    color: #7e8287;
+    margin:  28px 0;
+}
+
+#about .about_card p{
+    width: 100%;
+    font-size: 11px;
+    margin: 0;
+    padding: 0 60px;
+    color: #7e8287;
+}
+/* about ends here */
+
+
+/* service starts here */
+
+#service {
+    margin-top: 100px;
+    background-image: url(../image/Service_img.jpg);
+    height: var(--banner-height);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+#service::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgb(240, 240, 232, 0.3);
+    z-index: -1;
+}
+
+#service h2{
+    font-weight: 800; 
+    font-size: 46px;
+    color: var(--main-color);
+    text-transform: uppercase;
+    position: relative;
+    padding: 40px 0;
+}
+
+#service h2::after{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    width: 162px;
+    height: 9px;
+    background-image: url(../image/underline.png);
+}
+
+#service .para{
+    width: 45%;
+    color: #7e8287;
+    padding: 20px 0;
+    line-height: 40px;
+}
+
+#service .service_details .service_card{
+    
+    text-align: left;
+    padding: 40px 0;
+    display: inline-block;
+}
+
+
+#service .service_details .service_card span{
+    color: var(--main-color);
+    font-size: 30px;
+}
+
+#service .service_details .service_card h3 {
+    font-size: 16px;
+    font-weight: 800;
+    color: #7e8287;
+    margin:  18px 0;
+}
+
+#service .service_details .service_card p{
+    width: 75%;
+    font-size: 11px;
+    margin: 0;
+    padding: 0 40px 0 0;
+    color: #7e8287;
+}
+
+/* service ends here */
+
+/* my work starts here */
+
+#work{
+    margin-bottom: 50px;
+}
+#work p{
+    width: 720px;
+    text-align: center;
+    margin: 78px auto;
+    color: #7e8287;
+    padding: 0 15px;
+}
+
+#work .work_card{
+    position: relative;
+    padding: 0;
+}
+
+#work .work_card img{
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#work .work_card .overlay{
+    position: absolute;
+    z-index: 10;
+    inset: 20px;
+    color: white;
+    text-align: center;
+    background-color: rgba(2, 145, 140, 0.7);
+    transform: scale(0);
+    transition: 0.3s ease-in ;
+}
+
+#work .work_card .overlay h3{
+    font-size: 16px;
+    font-weight: 800;
+    padding: 60px 0 20px 0;
+    opacity: 0;
+    transition: 0.5s ease-in;
+}
+#work .work_card .overlay p{
+    font-size: 13px;
+    width: 100%; 
+    padding: 0 50px 60px 50px;
+    margin: 0;
+    color: white;
+    opacity: 0;
+    transition: 0.7s ease-in;
+}
+
+#work .work_card:hover .overlay{
+    transform: scale(1);
+}
+
+#work .work_card:hover .overlay h3{
+    opacity: 1;
+    
+}
+
+#work .work_card:hover .overlay p{
+    opacity: 1;
+}
+
+/* work ends here */
+
+/* footer starts here */
+
+
+footer p{
+    width: 720px;
+    text-align: center;
+    margin: 78px auto;
+    color: #7e8287;
+    padding: 0 15px;
+}
+
+form{
+    background-color: #0b0b0b;
+    padding: 60px 0;
+}
+
+form .form_input{
+    width: 600px;
+    margin: auto;
+    
+}
+
+form .form_input input{
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #898989;
+    outline: 0;
+    text-align: center;
+    color: #7e8287;
+    text-transform: uppercase;
+    padding: 55px 0 15px 0;
+}
+form .form_input input:focus{
+    background-color: transparent;
+    color: #7e8287;
+    outline: 0;
+}
+footer .form_text p{
+    text-transform: uppercase;
+    color:#7e8287 ;
+    padding: 55px 0 15px 0;
+    margin: 0 auto;
+    font-size: 16px;
+}
+footer .form_text textarea{
+    width: 930px;
+    height: 90px;
+    background-color: transparent;
+    color: #7e8287;
+    font-size: 16px;
+    border: none;
+    outline: 0;
+    border-top: 1px solid #898989;
+    border-bottom: 1px solid #898989;
+    resize: none;
+    margin-left: 220px;
+}
+footer button{
+    margin-top: 50px;
+}
+footer .copyright{
+    background-color: #000000;
+}
+
+footer .copyright p{
+    margin: 0 auto;
+    padding: 30px;
+    font-size: 12px;
+}
